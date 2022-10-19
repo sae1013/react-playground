@@ -1,4 +1,21 @@
 @import 'global';
+//break points
+//sm (640px)	max-width: 640px;
+//md (768px)	max-width: 768px;
+//lg (1024px)	max-width: 1024px;
+//xl (1280px)	max-width: 1280px;
+//2xl (1536px)	max-width: 1536px;
+
+
+html {
+  --primary-color:ivory;
+  --button-primary-color: tan;
+}
+
+html.dark {
+  --primary-color: #000;
+  --button-primary-color: purple;
+}
 
 * {
   box-sizing: border-box;
@@ -7,9 +24,30 @@
 body {
   padding: 0;
   margin: 0;
+
 }
 
 ul {
   list-style: none;
 }
 
+.App {
+  background-color: var(--primary-color);
+  height: 100vh;
+
+}
+
+button {
+  //width: 100px;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  background-color:var(--button-primary-color);
+  transition: all 0.2s;
+  border-radius: 10px;
+  &:hover {
+    opacity:0.7;
+
+
+  }
+}

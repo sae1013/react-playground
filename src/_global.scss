@@ -1,7 +1,11 @@
-$primary-color:#f3f3f3 ;
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+//@import './App.scss';
 
 @mixin set-color($color, $bg-color) {
   color: $color;
   background-color: $bg-color;
+  background-color: var(--primary-color);
 }
+
