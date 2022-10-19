@@ -54,18 +54,23 @@ function App() {
               <span>튜토리얼1</span>
             </div>
             <div>튜토리얼 1의 내용입니다</div>
+            {onTutorial && <div className={`tutorial__guide guide1 ${tutorialIndex+1 === 1 ? 'visible':'' }`}>가이드 입니다</div>}
           </div>
+
+
           <div className={`tutorial tutorial-2 ${tutorialIndex+1 === 2 ? 'show':'' }`}>
             <div className={"tutorial__header"}>
               <span>튜토리얼2</span>
             </div>
             <div>튜토리얼 2의 내용입니다</div>
+            {onTutorial && <div className={`tutorial__guide guide1 ${tutorialIndex+1 === 2 ? 'visible':'' }`}>가이드 입니다</div>}
           </div>
           <div className={`tutorial tutorial-3 ${tutorialIndex+1 === 3 ? 'show':'' }`}>
             <div className={"tutorial__header"}>
               <span>튜토리얼3</span>
             </div>
             <div>튜토리얼 3의 내용입니다</div>
+            {onTutorial && <div className={`tutorial__guide guide1 ${tutorialIndex+1 === 3 ? 'visible':'' }`}>가이드 입니다</div>}
           </div>
 
 

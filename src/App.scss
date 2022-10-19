@@ -120,6 +120,26 @@ button.navigation__button {
    border-bottom: 2px solid #213547;
   }
 
+  &__guide {
+    display: none;
+    &.visible {
+      display: block;
+    }
+
+    &.guide1 {
+      width: 150px;
+      position: absolute;
+      left: 120%;
+      background-color:#bbb;
+
+    }
+    &.guide2 {
+
+    }
+    &.guide3 {
+
+    }
+  }
 }
 
 .tutorial-1 {
