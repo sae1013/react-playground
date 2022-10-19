@@ -1,0 +1,7 @@
+$primary-color:#f3f3f3 ;
+
+
+@mixin set-color($color, $bg-color) {
+  color: $color;
+  background-color: $bg-color;
+}
