@@ -5,7 +5,7 @@ import Button from "./design-components/Button";
 function App() {
   return (
     <div className="App">
-      <Button>버튼</Button>
+      <Button styles="bg-blue-600">버튼</Button>
     </div>
   );
 }
